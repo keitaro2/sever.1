@@ -26,7 +26,8 @@ def get_beat():
     try:
         f = open(file_path, 'r')
         for row in f:
-            beat = row
+        beat = row
+        return beat
     except Exception as e:
         print(e)
         return e
